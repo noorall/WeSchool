@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_index_item"
+    android:paddingLeft="50dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_exerciseItemHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_exerciseBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/circle_blue"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_exerciseBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_exerciseBegin"
+            android:text="开始"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="4dp"
+            />
+        <View
+            android:id="@+id/view_exerciseLine"
+            android:layout_toRightOf="@+id/tv_exerciseBegin"
+            android:layout_width="140dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="6dp"
+            android:layerType="software"
+            android:layout_centerVertical="true"
+            android:background="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/iv_exerciseEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/view_exerciseLine"
+            android:background="@mipmap/circle_red"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_exerciseEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_exerciseEnd"
+            android:gravity="center"
+            android:text="结束"
+            android:textSize="16sp"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/colorBlack" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_exerciseItemMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_exerciseItemHead"
+        >
+        <TextView
+            android:id="@+id/tv_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:10"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:layout_marginLeft="14dp"
+            />
+        <TextView
+            android:id="@+id/tv_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:30"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:layout_marginLeft="162dp"
+            android:layout_toRightOf="@+id/tv_startTime"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_exerciseItemBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_exerciseItemMiddle">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/kind" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_location"
+            android:gravity="center"
+            android:text="晨跑"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_minutes"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_location"
+            android:background="@mipmap/time" />
+
+        <TextView
+            android:id="@+id/tv_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_minutes"
+            android:gravity="center"
+            android:text=" 20分钟"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_km"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_minutes"
+            android:background="@mipmap/km" />
+
+        <TextView
+            android:id="@+id/tv_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_km"
+            android:gravity="center"
+            android:text="4.24KM"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_location"
+            android:text="2019/9/19"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>

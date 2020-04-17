@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.noorall.weschool.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/profiles_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_profiles"
+        android:name="com.noorall.weschool.profiles.ProfilesFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profiles" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.noorall.weschool.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

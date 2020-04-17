@@ -1,0 +1,4 @@
+#Thu Apr 16 18:03:49 CST 2020
+base.0=E\:\\Code\\WeSchool\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="design_bottom_navigation_elevation">4dp</dimen>//阴影的大小
+    <dimen name="design_bottom_navigation_active_text_size">12sp</dimen>
+    <dimen name="design_bottom_navigation_margin" tools:override="true">11dp</dimen>
+
+    <style name="courseTableText">
+        <item name="android:textColor">#4b3b85</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

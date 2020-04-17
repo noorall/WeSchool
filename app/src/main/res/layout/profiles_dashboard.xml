@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/laback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/rl_course_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinner_weeks"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/weeks"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_course_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_course_header">
+            <ScrollView
+                android:id="@+id/main_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false">
+
+                <com.noorall.weschool.weight.TimeTableView
+                    android:id="@+id/main_timetable_ly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"></com.noorall.weschool.weight.TimeTableView>
+            </ScrollView>
+        </RelativeLayout>
+        </RelativeLayout>
+</LinearLayout>

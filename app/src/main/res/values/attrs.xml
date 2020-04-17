@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PersonalItemView">
+        <attr name="left_icon" format="reference"/>//设置左侧图标
+        <attr name="left_text" format="string"/>//左侧标题文字
+        <attr name="show_right_arrow" format="boolean"/>//是否显示右侧小箭头
+    </declare-styleable>
+</resources>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_appwidget_bg"
+    android:padding="@dimen/widget_margin">
+    <RelativeLayout
+        android:id="@+id/rl_course_appwidget_head"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_appwidget_head_bg"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/tv_widget_date"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/shape_appwidget_date"
+            android:gravity="center"
+            android:text="周一"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="今日课程"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_widget_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_course_appwidget_head"
+        android:divider="@null"
+        android:scrollbars="none"
+        />
+</RelativeLayout>

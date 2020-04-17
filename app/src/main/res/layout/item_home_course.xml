@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorWhite"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingRight="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_course_left"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_courseSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1-2"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_courseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_courseSection"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="20:00-21:00"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_course_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_course_left"
+        android:background="@drawable/shape_circle_colorful"
+        android:gravity="center"
+        android:paddingLeft="20dp">
+            <LinearLayout
+                android:id="@+id/rl_course_left_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_kind"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/home_course_kind" />
+                <TextView
+                    android:id="@+id/tv_courseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_kind"
+                    android:text="数据结构"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_course_left_head"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            >
+            <ImageView
+                android:id="@+id/iv_place"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/home_course_local"
+                />
+            <TextView
+                android:id="@+id/tv_courseLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长安校区"
+                android:textSize="12sp"
+                android:textColor="@color/colorTinyGray"
+                />
+            <ImageView
+                android:id="@+id/iv_local"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/home_course_place"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_classRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTinyGray"
+                android:text="教西D101"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
